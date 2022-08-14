@@ -12,6 +12,8 @@ const PLACES = 7;
 
 const app = express();
 
+const PORT = process.env.PORT || config.app.port;
+
 app.use(express.static("assets"));
 app.use(compression());
 app.set("view engine", "pug");
@@ -66,7 +68,7 @@ app.get("/heart-beat", (req, res) => {
   console.log("heart-beat");
 });
 
-const listener = app.listen(config.app.port || 3000, () => {
+const listener = app.listen(PORT || 3000, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
 
