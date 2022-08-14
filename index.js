@@ -1,6 +1,6 @@
 "use strict";
 
-const fs = require("fs");
+const path = require("path");
 const express = require("express");
 const compression = require("compression");
 
@@ -16,6 +16,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static("assets"));
 app.use(compression());
 app.set("view engine", "pug");
+app.set("views", path.join(__dirname, "views"));
 
 app.get("/", (req, res) => {
   res.render("index");
