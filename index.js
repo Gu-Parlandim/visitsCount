@@ -1,7 +1,6 @@
 "use strict";
 
 const fs = require("fs");
-const config = require("config-yml");
 const express = require("express");
 const compression = require("compression");
 
@@ -12,7 +11,7 @@ const PLACES = 7;
 
 const app = express();
 
-const PORT = process.env.PORT || config.app.port;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static("assets"));
 app.use(compression());
