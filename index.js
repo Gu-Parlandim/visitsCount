@@ -13,8 +13,9 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static("assets"));
 app.use(express.static("public"));
+app.use(express.static("assets"));
+
 app.use(compression());
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
