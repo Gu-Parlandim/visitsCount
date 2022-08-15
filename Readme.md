@@ -2,7 +2,7 @@
 
 ## Example
 
-![:repo](https://visits-count.vercel.app/get/@:repo)
+![:repo](https://viewscount.vercel.app//get/@:repo)
 
 #### Deploying on your own server
 
