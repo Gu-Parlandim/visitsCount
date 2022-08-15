@@ -21,6 +21,7 @@ app.set("views", path.join(__dirname, "views"));
 
 app.get("/", (req, res) => {
   res.setHeader("Content-Type", "text/html");
+  res.setHeader("X-Content-Type-Options", "nosniff");
   res.render("index");
 });
 
