@@ -8,16 +8,16 @@
     "dev": "nodemon index.js localhost 3000"
   },
   "keywords": [],
-  "author": "journey-ad",
+  "author": "gu-parlandim",
   "license": "MIT",
   "dependencies": {
     "compression": "^1.7.4",
     "dotenv": "^16.0.1",
-    "express": "^4.17.1",
+    "express": "^4.18.1",
     "image-size": "^0.8.3",
-    "mime-types": "^2.1.27",
+    "mime-types": "^2.1.35",
     "mongoose": "^6.2.10",
-    "pug": "^3.0.0"
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
