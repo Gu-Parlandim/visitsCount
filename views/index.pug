@@ -2,23 +2,31 @@ html
   head
     title='Counter!'
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='icon', type='image/png', href='./favicon.png')
-    link(rel="stylesheet", href="./styles/main.css")
+    link(rel='icon', type='image/png', href='favicon.png')
+    link(rel="stylesheet", href="styles/style.css")
 
   body.container
-    h3 How to use:
+    h3 Como usar:
+
+    h4 substitua o ":name" pelo seu nome
 
     h5 SVG address
-    code https://count.getloli.com/get/@:name
+    code https://viewscount.vercel.app/get/@:name
 
     h5 Img tag
-    code &lt;img src="https://count.getloli.com/get/@:name" alt=":name" />
+    code &lt;img src="https://viewscount.vercel.app/get/@:name" alt=":name" />
 
     h5 Markdown
-    code ![:name](https://count.getloli.com/get/@:name)
+    code ![:name](https://viewscount.vercel.app/get/@:name)
 
     h3 eg:
-      <img src="http://localhost:3000/get/@:test" alt="Moe Count!" />
+        div.image-size
+            <img src="https://viewscount.vercel.app/get/@repo" alt="Moe Count!" />
     
-    h3 All credits: 
+    h3 baseado em: 
         a(href="https://count.getloli.com/") https://count.getloli.com
+
+    a.link(href="https://github.com/Gu-Parlandim/visitsCount", target="_blank", rel="noopener noreferrer") 
+        ="github"
+        div.github-icon
+            img(src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",  alt="github incon")
