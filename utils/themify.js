@@ -33,7 +33,10 @@ function convertToDatauri(path) {
 }
 
 function getTextVisits() {
-  const pathImg = path.resolve(__dirname, "../assets/visits2.png");
+  const pathImg = path.resolve(
+    __dirname,
+    "../assets/theme/testing/visits2.png"
+  );
   const data = convertToDatauri(pathImg);
 
   return `<image x="${0}" y="0" width="${250}" height="${36}" xlink:href="${data}" />`;
